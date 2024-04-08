@@ -1,0 +1,99 @@
+DATABASE EXAMPLES
+#User db collection
+
+[
+    {
+        _id: '603747c119d98627603859c5',
+        bookings: [
+            '60153509844c850ad4b89a57',
+            '601530ea844c850ad4b89a55',
+            '60156949844c850ad4b89a5a',
+        ],
+        firstName: 'Test1',
+        lastName: 'web',
+        email: 'test1@gmail.com',
+        password: '$2a$13$VXLs7A0l7uvaPB9aRJ7HM.Y22BgYP/DdQt6o24QZHEX.HfMlX/UZ.',
+    }
+]
+
+#Services db collection
+
+[
+    {
+        _id: '60106d8642bd1c2180921941',
+        highlights: [
+            'Scaling the highest peak of Maharashtra',
+            'Kalsubai Temple',
+            'Surreal greenery and blissful environment while Kalsubai trek',
+            'Panoramic view of several mountains',
+            'Mesmerizing views And Breathtaking beauty.',
+        ],
+        itinerary: [
+            '09.30pm- Board the Bus from Dadar.',
+            '02.00am- Reach the Base of the Fort & Freshen up rest a bit.  03.00am- Start with the Trek  06.00am - Reach the top experience the Mesmerizing Sunrise Have Breakfast and explore click pictures at an elevation of 1,646 metres  11.00am- Reach the Base Rest for a while have your Traditional Lunch in the Rustic Homes of Kalsubai Village.  03.00pm- Will start for the return Journey',
+        ],
+        inclusions: [
+            'AC Bus Travel  (Mumbai to Mumbai)',
+            '-1 Lunch (Veg-Nonveg)',
+            '-1 Breakfast',
+            '-1 high tea',
+            '-Expertise and FirstAid',
+        ],
+        exclusions: [
+            'Any personal expenses such as soft drinks, mineral water, etc.',
+            'Anything other than the above-mentioned inclusion.',
+            'All expenses incurred due to unforeseen and unavoidable circumstances like roadblocks, bad weather.',
+            'Any medical / Emergency evacuations if required.',
+        ],
+        type: 'Treks',
+        title: 'Sunrise Trek To Kalsubai',
+        overview:
+            "Kalsubai at 5400ft is the highest peak of Maharashtra and this is the main reason for its popularity and difficulty. It is located in the Kalsubai mountain range which is an offshoot range from the main Sahyadri range. Surrounded by lush green forests and fields, the trekking route towards Maharashtra's Highest Peak is a surreal experience for all nature lovers and trek enthusiasts. Challenging yet fun-filled, trek towards the highest summit will test your patience and offer an amazing panoramic view of several more mountain ranges like Alang, Madangad, Kulang, Ratangad (south-west) and to the south Pabhargad, Ghanchakkar & Harishchandragad.",
+        startDate: '2021-06-04T19:17:00.000Z',
+        days: 2,
+        price: 1500,
+        image:STRING    
+    }
+]
+
+#Enquiries db 
+
+[
+    {
+        _id: '6033d115cd234e3064e72230',
+        name: 'Test1',
+        email: 'test1@gmail.com',
+        message: 'This is a test enquiry.',
+        createdAt: '2024-03-30T15:43:17.021Z',
+    }
+]
+
+# Booking db
+
+[
+    {
+        _id: '603747de19d98627603859c6',
+        name: 'Test1 test',
+        email: 'test1@gmail.com',
+        contact: 9898653210,
+        persons: 10,
+        serviceBooked: '60153509844c850ad4b89a57',
+        bookedBy: '603747c119d98627603859c5',
+    },
+]
+
+#Carousels db
+
+[{
+    _id: '601818438dc1d73fdcdb9b3e',
+        title: 'City Side',
+        description: 'This soothing view will take all your stress away',
+        image:STRING
+}]
+
+#advt db 
+
+[{
+     _id: '60372733a830ae2cdc0cdea2',
+        image:STRING
+}]
