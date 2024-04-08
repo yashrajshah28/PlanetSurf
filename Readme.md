@@ -25,4 +25,6 @@ Install PlanetSurf with npm
     After both installation complete type
     4 - npm start
 ```
-    
+
+And check this path for database server PlanetSurf\client\src\constants\urls.js
+change comment line to the first line and remove form second line comment
