@@ -130,18 +130,18 @@ function Home({
                 <Loading />
             )}
 
-            <h3 className="home__showcaseHeading">Trending Indian Destinations</h3>
-            <ShowcaseCarousel
-                showcaseItems={trendingServices}
-                divID={'trendingPlacesDivID'}
-            />
+                <div className='tranding'><h3 className="home__showcaseHeading">Trending Indian Destinations</h3></div>
+                <ShowcaseCarousel
+                    showcaseItems={trendingServices}
+                    divID={'trendingPlacesDivID'}
+                />
 
-            {advtData && <AdvtBanner image={advtData.image} link={advtData.link} />}
+                {advtData && <AdvtBanner image={advtData.image} link={advtData.link} />}
 
-            <h3 className="home__showcaseHeading home__headingSpecial">
-                Special Packages
-            </h3>
-            <ShowcaseCarousel showcaseItems={specials} divID={'specialPackagesDivID'} />
+                <div className='special'><h3 className="home__showcaseHeading home__headingSpecial">
+                    Special Packages
+                </h3></div>
+                <ShowcaseCarousel showcaseItems={specials} divID={'specialPackagesDivID'} />
 
             <WhyUs />
         </>

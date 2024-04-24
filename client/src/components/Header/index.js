@@ -27,9 +27,9 @@ function Header({ isModalOpen, setIsModalOpen }) {
                 <Container>
                     <div className="header__top">
                         <div className="header__topLeft">
-                            <span><PhoneIcon /> admin@gmail.com</span>
-                            <span><ContactlessIcon /> We Care</span>
-                            <span><LocationOnIcon /> Stores</span>
+                            {/* <span><PhoneIcon /> admin@gmail.com</span> */}
+                            {/* <span><ContactlessIcon /> We Care</span> */}
+                            {/* <span><LocationOnIcon /> Stores</span> */}
                         </div>
 
                         <div className="header__topRight">

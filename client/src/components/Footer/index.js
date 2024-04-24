@@ -107,8 +107,7 @@ function Footer() {
                     <a
                         href="MCA"
                         target="_blank"
-                        rel="noreferrer"
-                    >
+                        rel="noreferrer">
                         MCA
                     </a>
                 </Typography>

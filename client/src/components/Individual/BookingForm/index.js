@@ -57,21 +57,21 @@ function BookingForm({ setIsModalOpen, serviceID }) {
     useEffect(() => {
         if (responseMessage.hasOwnProperty("message"))
             setInputValues(initialInputValues)
-    }, [ responseMessage ])
+    }, [responseMessage])
 
 
     useEffect(() => {
         if (userContext.user)
             setResponseMessage({})
-    }, [ userContext.user ])
+    }, [userContext.user])
 
 
-    
+
     return (
         <form className="bookingForm" onSubmit={handleOnSubmit}>
             <Typography variant="h5">Book Your Seat</Typography>
             <TextField
-                required 
+                required
                 type="text"
                 variant="standard"
                 color="secondary"
@@ -81,7 +81,7 @@ function BookingForm({ setIsModalOpen, serviceID }) {
                 value={inputValues.name}
                 onChange={handleOnChange}
             />
-            <TextField 
+            <TextField
                 type="email"
                 variant="standard"
                 color="secondary"
@@ -92,7 +92,7 @@ function BookingForm({ setIsModalOpen, serviceID }) {
                 onChange={handleOnChange}
             />
             <TextField
-                required 
+                required
                 type="tel"
                 variant="standard"
                 color="secondary"
@@ -103,7 +103,7 @@ function BookingForm({ setIsModalOpen, serviceID }) {
                 onChange={handleOnChange}
             />
             <TextField
-                required 
+                required
                 type="number"
                 variant="standard"
                 color="secondary"
@@ -113,9 +113,21 @@ function BookingForm({ setIsModalOpen, serviceID }) {
                 value={inputValues.persons}
                 onChange={handleOnChange}
             />
-            <Button type="submit" variant="contained" color="secondary">
+            {/* <Button type="submit" variant="contained" color="secondary">
                 Book { inputValues.persons > 1 ? "Seats" : "a Seat" }
+            </Button> */}
+
+            <Button
+                type="submit"
+                variant="contained"
+                color="secondary"
+                onClick={() => window.open("https://rzp.io/i/TjYNpIpMAG")}
+            >
+                Book {inputValues.persons > 1 ? "Seats" : "a Seat"}
             </Button>
+
+            
+
             {
                 (responseMessage.hasOwnProperty("errors") || responseMessage.hasOwnProperty("message")) && (
                     responseMessage.hasOwnProperty("errors") ? (
