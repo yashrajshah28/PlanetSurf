@@ -474,10 +474,10 @@ const CreateOwn = ({ destinationsData = [], pricesData = {}, setIsModalOpen }) =
                     Talk To Agent
                 </Typography>
                 <Typography variant="h6">
-                    <PhoneInTalkIcon /> Telephone: +512-2255-9966, +512-6655-7700
+                    <PhoneInTalkIcon /> Telephone: 74878xxxxx, 9898123456
                 </Typography>
                 <Typography variant="h6">
-                    <EmailIcon /> Email: wander.lust@gmail.com
+                    <EmailIcon /> Email: planet.surf@gmail.com
                 </Typography>
                 <FormHelperText>
                     You can also drop your query in the contact form at the footer of the

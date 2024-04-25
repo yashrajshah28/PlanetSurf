@@ -1,0 +1,55 @@
+import * as Realm from "realm-web";
+
+const app = new Realm.App({ id: 'data-gdrugpz' });
+
+async function loginEmailPassword(email, password) {
+  // Create an email/password credential
+  const credentials = Realm.Credentials.emailPassword(email, password);
+  // Authenticate the user
+  const user = await app.logIn(credentials);
+  // 'App.currentUser' updates to match the logged in user
+  console.assert(user.id === app.currentUser.id);
+  return user;
+}
+
+const user = await loginEmailPassword('freak28042002@gmail.com', 'yashraj2804');
+return user.accessToken;
+
+=================== 
+
+
+var axios = require('axios');
+var data = JSON.stringify({
+    "collection": "tms2",
+    "database": "tms2",
+    "dataSource": "Cluster0",
+    "projection": {
+        "_id": 1
+    }
+});
+
+var config = {
+    method: 'post',
+    url: 'https://ap-south-1.aws.data.mongodb-api.com/app/data-gdrugpz/endpoint/data/v1/action/findOne',
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Request-Headers': '*',
+      'Authorization': 'Bearer <ACCESS_TOKEN>',
+      'Accept': 'application/ejson'
+    },
+    data: data
+};
+
+axios(config)
+    .then(function (response) {
+        console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+
+====================
+
+https://ap-south-1.aws.data.mongodb-api.com/app/data-gdrugpz/endpoint/data/v1
+
+====================

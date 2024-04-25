@@ -22,8 +22,10 @@ Install PlanetSurf with npm
     1 - cd client
     2 - npm i
     3 - npm audit fix --force
+    4 - npm install react@latest react-dom@latest
+    5 - npm install react-scripts@latest
     After both installation complete type
-    4 - npm start
+    6 - npm start
 ```
 
 And check this path for database server PlanetSurf\client\src\constants\urls.js
