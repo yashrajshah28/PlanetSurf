@@ -43,6 +43,7 @@ function Home({
 
     return (
         <>
+        {/* Search function code */}
             <Container fluid className="home">
                 <div className="home__searchBar">
                     <ClickAwayListener onClickAway={() => setSearchInput('')}>
